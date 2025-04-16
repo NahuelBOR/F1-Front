@@ -11,6 +11,9 @@ import AddRaceResult from './components/AddRaceResult';
 function App() {
   return (
     <Router>
+      <div>
+        <h1>¡Bienvenido a F1 Predicciones!</h1>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -20,6 +23,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
+    
   );
 }
 
